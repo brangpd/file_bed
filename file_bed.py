@@ -60,6 +60,8 @@ for argi in range(1, len(sys.argv)):
     code = resp.getcode()
     if code >= 300:
       print(resp.getcode())
+    else:
+      print('OK: https://github.com/{}/{}/raw/main/{}'.format(OWNER, REPO, filename_with_time))
 
 conn.close()
 
